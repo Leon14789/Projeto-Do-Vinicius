@@ -1,0 +1,90 @@
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+
+
+    .img-logo {
+        width: 900px;
+    }
+
+
+    #banner::before {
+
+        content: '';
+        display: inline-block;
+        height: 55vh;
+        vertical-align: middle;
+        width: 1%;
+
+    }
+
+    #banner .content {
+        padding: 0.1em;
+    }
+
+
+    .spotlight {
+        background-size: contain;
+
+    }
+
+    #flex-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .spotlight {
+        height: 50vh !important;
+
+    }
+
+    #banner {
+        min-height: 50vh;
+    }
+
+    .goto-next::before {
+        display: none !important;
+    }
+
+
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+
+    #banner::before {
+
+
+        height: 75vh;
+
+
+    }
+
+    .img-logo {
+        width: 700px;
+    }
+
+
+
+    #banner {
+        min-height: 50vh;
+    }
+
+
+
+
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+
+
+
+
+    .img-logo {
+        width: 350px !important;
+    }
+
+    .video {
+        width: 360px;
+    }
+}
