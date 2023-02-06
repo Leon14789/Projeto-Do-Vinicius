@@ -27,6 +27,7 @@
 		<!-- Intro -->
 		<section id="intro" class="wrapper style1 fullscreen fade-up">
 			<div class="inner" id="logo-nome">
+			<img src="../../../assets-sistema/images/logo.png" alt="">
 			</div>
 		</section>
 
