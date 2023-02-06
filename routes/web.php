@@ -22,3 +22,17 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+
+
+Route::get('/{folder}/{resource}', function ($folder, $resource)
+{
+    if( View::exists("pages.$folder.$resource") ){
+        return view("pages.$folder.$resource");
+    }else{
+        return view("pages.$folder.$resource.index");
+    }
+});
+
+
+
