@@ -33,8 +33,8 @@
 														<label for="name">Nome Completo</label>
 														<input type="text" name="name" id="name" />
 
-                                                        <label for="name">CPF</label>
-														<input type="text" name="name" id="name" />
+                                                        <label for="cpf">CPF</label>
+														<input type="text" name="cpf" id="cpf" />
 
 													
 												
@@ -42,15 +42,13 @@
 														
 													</div>
 													<div class="field half">
-														<label for="email">Numero do Telefone</label>
-														<input type="text" name="email" id="email" />
+														<label for="cell">Numero do Telefone</label>
+														<input type="text" name="cell" id="cell" />
 
 													</div>
 													
 												</div>
-												<ul class="actions">
-													<li><a href="" class="button submit">Salvar</a></li>
-												</ul>
+												<button>ENVIAR </button>
 											</form>
 										
 									</div>
