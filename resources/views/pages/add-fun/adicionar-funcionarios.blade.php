@@ -28,6 +28,7 @@
 									<div class="split style2">
 
 											<form method="post" action="#" class="form-ini-trab">
+                                                @csrf
 												<div class="fields">
 													<div class="field half">
 														<label for="name">Nome Completo</label>
