@@ -21,43 +21,38 @@
 			<div id="wrapper">
 
 				<!-- Intro -->
-
-
+					
+						
 								<div class="main">
-									<h1 class="txt">ADICIONAR FUNCIONARIO</h1>
+									<h1 class="txt">FUNCIONARIOS CADASTRADOS</h1>
 									<div class="split style2">
-
+										
 											<form method="post" action="#" class="form-ini-trab">
 												<div class="fields">
 													<div class="field half">
-														<label for="name">Nome Completo</label>
-														<input type="text" name="name" id="name" />
+                                                        <label for="name">Selecione o Funcionario que deseja editar</label>
 
-                                                        <label for="cpf">CPF</label>
-														<input type="text" name="cpf" id="cpf" />
-
-
-
-
-
-													</div>
-													<div class="field half">
-														<label for="cell">Numero do Telefone</label>
-														<input type="text" name="cell" id="cell" />
+														<select name="time">
+															<option value="#">Funcionario 1</option>
+															<option value="#">Funcionario 2</option>
+															<option value="#">Funcionario 3</option>
+															<option value="#">Funcionario 4</option>
+															</select>
 
 													</div>
-
+													
 												</div>
-												<button>ENVIAR </button>
+												<ul class="actions">
+													<li><a href="" class="button submit">Salvar</a></li>
+												</ul>
 											</form>
-
+										
 									</div>
-
 								</div>
 			</div>
 
-
-
+			
+		
 		<!-- Scripts -->
 			<script src="../../../assets-sistema/js/jquery.min.js"></script>
 			<script src="../../../assets-sistema/js/jquery.scrollex.min.js"></script>

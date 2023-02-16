@@ -14,7 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
 Route::get('/', function () {
     return view('index');
 });
@@ -38,5 +37,6 @@ Route::get('/{folder}/{resource}', function ($folder, $resource)
 });
 
 
+Route::POST('/{folder}/{add-fun}/adicionar-funcionario', [FuncionariosController::class, 'store']);
 
 
