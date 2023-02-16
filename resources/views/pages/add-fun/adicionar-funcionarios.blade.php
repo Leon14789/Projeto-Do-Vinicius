@@ -21,13 +21,14 @@
 			<div id="wrapper">
 
 				<!-- Intro -->
-					
-						
+
+
 								<div class="main">
 									<h1 class="txt">ADICIONAR FUNCIONARIO</h1>
 									<div class="split style2">
-										
+
 											<form method="post" action="#" class="form-ini-trab">
+                                                @csrf
 												<div class="fields">
 													<div class="field half">
 														<label for="name">Nome Completo</label>
@@ -36,27 +37,27 @@
                                                         <label for="cpf">CPF</label>
 														<input type="text" name="cpf" id="cpf" />
 
-													
-												
 
-														
+
+
+
 													</div>
 													<div class="field half">
 														<label for="cell">Numero do Telefone</label>
 														<input type="text" name="cell" id="cell" />
 
 													</div>
-													
+
 												</div>
 												<button>ENVIAR </button>
 											</form>
-										
+
 									</div>
 								</div>
 			</div>
 
-			
-		
+
+
 		<!-- Scripts -->
 			<script src="../../../assets-sistema/js/jquery.min.js"></script>
 			<script src="../../../assets-sistema/js/jquery.scrollex.min.js"></script>

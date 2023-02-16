@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class FuncionariosController extends Controller
 {
-   public function store(Request $requedt) {
+   public function store(Request $request) {
 
     dd($request->all());
 
