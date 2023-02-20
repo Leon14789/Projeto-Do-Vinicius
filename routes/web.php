@@ -25,7 +25,17 @@ Route::get('/dashboard', function () {
 
 require __DIR__.'/auth.php';
 
-Route::post('/add-fun/adicionar-funcionarios', [FuncionariosController::class, 'store']);
+
+
+
+
+Route::post('/add-fun/adicionar-funcionarios', [FuncionariosController::class, 'store'])->name('form.store');
+
+
+
+
+
+
 
 Route::get('/{folder}/{resource}', function ($folder, $resource)
 {

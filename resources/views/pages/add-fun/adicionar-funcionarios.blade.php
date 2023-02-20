@@ -27,7 +27,7 @@
 									<h1 class="txt">ADICIONAR FUNCIONARIO</h1>
 									<div class="split style2">
 
-											<form method="post" action="#" class="form-ini-trab">
+											<form class="form-ini-trab" method="post"  action="{{ route('form.store') }}" >
                                                 @csrf
 												<div class="fields">
 													<div class="field half">
@@ -36,11 +36,6 @@
 
                                                         <label for="cpf">CPF</label>
 														<input type="text" name="cpf" id="cpf" />
-
-
-
-
-
 													</div>
 													<div class="field half">
 														<label for="cell">Numero do Telefone</label>
