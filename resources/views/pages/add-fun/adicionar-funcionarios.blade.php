@@ -27,7 +27,7 @@
 									<h1 class="txt">ADICIONAR FUNCIONARIO</h1>
 									<div class="split style2">
 
-											<form class="form-ini-trab" method="post"  action="{{ route('form.store') }}" >
+											<form class="form-ini-trab" method="post"  action="{{ route('teste') }}" >
                                                 @csrf
 												<div class="fields">
 													<div class="field half">
