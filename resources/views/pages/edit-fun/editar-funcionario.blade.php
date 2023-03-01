@@ -24,28 +24,37 @@
 					
 						
 								<div class="main">
-									<h1 class="txt">FUNCIONARIOS CADASTRADOS</h1>
+									<h1 class="txt">FUNCIONARIOS PARA EDIÇÃO</h1>
 									<div class="split style2">
-										
-											<form method="post" action="#" class="form-ini-trab">
-												<div class="fields">
-													<div class="field half">
-                                                        <label for="name">Selecione o Funcionario que deseja editar</label>
 
-														<select name="time">
-															<option value="#">Funcionario 1</option>
-															<option value="#">Funcionario 2</option>
-															<option value="#">Funcionario 3</option>
-															<option value="#">Funcionario 4</option>
-															</select>
 
-													</div>
-													
-												</div>
-												<ul class="actions">
-													<li><a href="" class="button submit">Salvar</a></li>
-												</ul>
-											</form>
+									<table>
+										<thead>
+											<tr>
+												<th>ID</th>
+												<th>Nome</th>
+												<th>CPF</th>
+												<th>Telefone</th>
+												<th>Edições</th>
+											</tr>
+										</thead>
+										<tbody>
+											@foreach($employees as $employee)
+												<tr>
+													<td>{{$employee->id}}</td>
+													<td>{{$employee->name}}</td>
+													<td>{{$employee->cpf}}</td>
+													<td>{{$employee->cell}}</td>
+													<td>
+														<a href="{{ "/edit-fun/{$employee->id}/edicao" }}">Edite</a>
+													</td>
+												</tr>
+											@endforeach
+										</tbody>
+									</table>
+
+									
+											
 										
 									</div>
 								</div>

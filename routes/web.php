@@ -28,8 +28,15 @@ require __DIR__.'/auth.php';
 
 
 
+// Rotas de Funcionarios 
 
-Route::post('/add-fun/adicionar-funcionarios', [FuncionariosController::class, 'store'])->name('teste');
+//Criar Funcionario
+Route::post('/add-fun/adicionar-funcionarios', [FuncionariosController::class, 'store'])->name('create');
+// Listar Funcionario
+Route::get('/edit-fun/editar-funcionario', [FuncionariosController::class, 'listar']);
+// Editar Funcionario
+Route::get('/edit-fun/{id}/edicao', [FuncionariosController::class, 'edicao'])->name('edicao');
+Route::post('/edit-fun/{id}/editar', [FuncionariosController::class, 'editar'])->name('editar');
 
 
 
