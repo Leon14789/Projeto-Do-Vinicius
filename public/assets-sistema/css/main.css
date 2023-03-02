@@ -166,8 +166,7 @@ body {
 
 @media screen and (max-width: 480px) {
 
-	html,
-	body {
+	html, body {
 		min-width: 320px;
 	}
 
@@ -177,30 +176,24 @@ html {
 	box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
 	box-sizing: inherit;
 }
 
 body {
-	background: #4a4a4a;
-	overflow: hidden;
-
+	background: #696969;
 }
 
-body.is-preload *,
-body.is-preload *:before,
-body.is-preload *:after {
-	-moz-animation: none !important;
-	-webkit-animation: none !important;
-	-ms-animation: none !important;
-	animation: none !important;
-	-moz-transition: none !important;
-	-webkit-transition: none !important;
-	-ms-transition: none !important;
-	transition: none !important;
-}
+	body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+		-moz-animation: none !important;
+		-webkit-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+		-moz-transition: none !important;
+		-webkit-transition: none !important;
+		-ms-transition: none !important;
+		transition: none !important;
+	}
 
 /* Type */
 
@@ -2422,6 +2415,7 @@ label {
 }
 
 input[type="text"],
+input[type="tel"],
 input[type="password"],
 input[type="email"],
 input[type="tel"],

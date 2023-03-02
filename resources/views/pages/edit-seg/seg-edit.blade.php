@@ -21,39 +21,35 @@
 			<div id="wrapper">
 
 				<!-- Intro -->
-
-
+					
+						
 								<div class="main">
-									<h1 class="txt">ADICIONAR FUNCIONARIO</h1>
+									<h1 class="txt">SEGURADORA {{$insurer->name}} SELECIONADA</h1>
 									<div class="split style2">
 
-											<form class="form-ini-trab" method="post"  action="{{ route('create') }}" >
+
+									
+									
+									<form class="form-ini-trab" method="post"  action=" {{ "/edit-seg/{$insurer->id}/mudar" }} " >
                                                 @csrf
 												<div class="fields">
 													<div class="field half">
 														<label for="name">Nome Completo</label>
-														<input type="text" name="name" id="name" />
-
-                                                        <label for="cpf">CPF</label>
-														<input type="text" name="cpf" id="cpf" />
-													</div>
-													<div class="field half">
-														<label for="cell">Numero do Telefone</label>
-														<input type="text" name="cell" id="cell" />
-
+														<input type="text" name="name" id="name" value="{{$insurer->name}}" />
 													</div>
 
 												</div>
-												<button>Cadastrar </button>
+												<button>Editar </button>
 											</form>
-
+										
+											
+										
 									</div>
-
 								</div>
 			</div>
 
-
-
+			
+		
 		<!-- Scripts -->
 			<script src="../../../assets-sistema/js/jquery.min.js"></script>
 			<script src="../../../assets-sistema/js/jquery.scrollex.min.js"></script>
@@ -64,6 +60,6 @@
 			<script src="../../../assets-sistema/js/main.js"></script>
 			<script src="../../../assets-sistema/js/cpf.js"></script>
 			.
-			
+
 	</body>
 </html>

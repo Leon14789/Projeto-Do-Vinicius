@@ -21,39 +21,47 @@
 			<div id="wrapper">
 
 				<!-- Intro -->
-
-
+					
+						
 								<div class="main">
-									<h1 class="txt">ADICIONAR FUNCIONARIO</h1>
+									<h1 class="txt">VEICULOS PARA EDIÇÃO</h1>
 									<div class="split style2">
 
-											<form class="form-ini-trab" method="post"  action="{{ route('create') }}" >
-                                                @csrf
-												<div class="fields">
-													<div class="field half">
-														<label for="name">Nome Completo</label>
-														<input type="text" name="name" id="name" />
 
-                                                        <label for="cpf">CPF</label>
-														<input type="text" name="cpf" id="cpf" />
-													</div>
-													<div class="field half">
-														<label for="cell">Numero do Telefone</label>
-														<input type="text" name="cell" id="cell" />
+									<table>
+										<thead>
+											<tr>
+												<th>ID</th>
+												<th>pao</th>
+												<th>Tag</th>
+												
+												<th>Edições</th>
+											</tr>
+										</thead>
+										<tbody>
+											@foreach($vehicles as $vehicle)
+												<tr>
+													<td>{{$vehicle->id}}</td>
+													<td>{{$vehicle->name}}</td>
+													<td>{{$vehicle->tag}}</td>
+													
+													<td>
+														<a href="{{ "/edit-vei/{$vehicle->id}/edition" }}">Edite</a>
+													</td>
+												</tr>
+											@endforeach
+										</tbody>
+									</table>
 
-													</div>
-
-												</div>
-												<button>Cadastrar </button>
-											</form>
-
+									
+											
+										
 									</div>
-
 								</div>
 			</div>
 
-
-
+			
+		
 		<!-- Scripts -->
 			<script src="../../../assets-sistema/js/jquery.min.js"></script>
 			<script src="../../../assets-sistema/js/jquery.scrollex.min.js"></script>
@@ -63,7 +71,6 @@
 			<script src="../../../assets-sistema/js/util.js"></script>
 			<script src="../../../assets-sistema/js/main.js"></script>
 			<script src="../../../assets-sistema/js/cpf.js"></script>
-			.
-			
+
 	</body>
 </html>

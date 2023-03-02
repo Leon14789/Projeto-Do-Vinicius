@@ -27,7 +27,8 @@
 									<h1 class="txt">ADICIONAR VEICULO</h1>
 									<div class="split style2">
 										
-											<form method="post" action="#" class="form-ini-trab">
+											<form method="post" action="{{ route('criar') }}"  class="form-ini-trab">
+											@csrf
 												<div class="fields">
 													<div class="field half">
 														<label for="name">Modelo do Veiculo</label>
@@ -35,8 +36,8 @@
 
 													</div>
 													<div class="field half">
-														<label for="email">Tag do Sem Parar</label>
-														<input type="text" name="email" id="email" />
+														<label for="tag">Tag do Sem Parar</label>
+														<input type="text" name="tag" id="tag" />
 
 													</div>
 													
@@ -60,7 +61,8 @@
 			<script src="../../../assets-sistema/js/breakpoints.min.js"></script>
 			<script src="../../../assets-sistema/js/util.js"></script>
 			<script src="../../../assets-sistema/js/main.js"></script>
-			<script src="../../../assets-sistema/js/desativar-o-scroll.js"></script>
+			<script src="../../../assets-sistema/js/cpf.js"></script>
+			.
 
 	</body>
 </html>

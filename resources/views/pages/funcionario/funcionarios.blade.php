@@ -23,10 +23,10 @@
 
 				<!-- Intro -->
 					
-						
+						<div id="wrapper">
 								<div class="main">
 									
-                                    <h1 class="txt">Funcionarios</h1>
+                                    <h1 class="txt">ITENS CADASTRAIS</h1>
                                     
                                         <div class="itens-funcionarios">
                                             <a href="../add-fun/adicionar-funcionarios" class="gallery__link">
@@ -42,18 +42,50 @@
                                                     <p class="txt-funcionarios">EDITAR FUNCIONARIO</p>
                                                 </figure>
                                             </a>
-
+										</div>							
+									
+										<div class="itens-funcionarios">
 											<a href="../add-vei/adicionar-veiculo" class="gallery__link">
                                                 <figure class="gallery__thumb">
                                                     <img src="../../../assets-sistema/images/add-truck.png" alt="#" class="gallery__image">
                                                     <p class="txt-funcionarios">ADICIONAR VEICULO</p>
                                                 </figure>
                                             </a>
+											<a href="../edit-vei/editar-veiculo" class="gallery__link">
+                                                <figure class="gallery__thumb">
+                                                    <img src="../../../assets-sistema/images/edit-truck.png" alt="#" class="gallery__image">
+                                                    <p class="txt-funcionarios">EDITAR VEICULO</p>
+                                                </figure>
+                                            </a>
+										</div>	
 
-                                        </div>
+										<div class="itens-funcionarios">
+											<a href="../add-seg/adicionar-seguradora" class="gallery__link">
+                                                <figure class="gallery__thumb">
+                                                    <img src="../../../assets-sistema/images/add-insurer.png" alt="#" class="gallery__image">
+                                                    <p class="txt-funcionarios">ADICIONAR SEGURADORA</p>
+                                                </figure>
+                                            </a>
+											<a href="../edit-seg/editar-seguradora" class="gallery__link">
+                                                <figure class="gallery__thumb">
+                                                    <img src="../../../assets-sistema/images/edit-insurer.png" alt="#" class="gallery__image">
+                                                    <p class="txt-funcionarios">EDITAR SEGURADORA</p>
+                                                </figure>
+                                            </a>
+											
+										</div>	
+									
+									
+
+											
+
+											
+
+                                      
 
 
 								
+			</div>
 			</div>
 
 			
@@ -66,7 +98,8 @@
 			<script src="../../../assets-sistema/js/breakpoints.min.js"></script>
 			<script src="../../../assets-sistema/js/util.js"></script>
 			<script src="../../../assets-sistema/js/main.js"></script>
-			<script src="../../../assets-sistema/js/desativar-o-scroll.js"></script>
+			<script src="../../../assets-sistema/js/cpf.js"></script>
+			.
 
 	</body>
 </html>

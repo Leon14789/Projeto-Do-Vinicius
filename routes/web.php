@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\FuncionariosController;
+use App\Http\Controllers\VeiculosController;
+use App\Http\Controllers\SeguradoraController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -39,7 +41,21 @@ Route::get('/edit-fun/{id}/edicao', [FuncionariosController::class, 'edicao'])->
 Route::post('/edit-fun/{id}/editar', [FuncionariosController::class, 'editar'])->name('editar');
 
 
+// Rotas de Veiculos 
+Route::post('/add-vei/adicionar-veiculo', [VeiculosController::class, 'criar'])->name('criar');
+// Listar Veiculos
+Route::get('/edit-vei/editar-veiculo', [VeiculosController::class, 'list']);
+// Editar Veiculos
+Route::get('/edit-vei/{id}/edition', [VeiculosController::class, 'edition'])->name('edition');
+Route::post('/edit-vei/{id}/edit', [VeiculosController::class, 'edit'])->name('edit');
 
+// Rotas de Seguradora 
+Route::post('/add-seg/adicionar-seguradora', [SeguradoraController::class, 'criacao'])->name('criacao');
+// Listar Seguradora
+Route::get('/edit-seg/editar-seguradora', [SeguradoraController::class, 'listagem']);
+// Editar Seguradora
+Route::get('/edit-seg/{id}/edicionar', [SeguradoraController::class, 'edicionar'])->name('edicionar');
+Route::post('/edit-seg/{id}/mudar', [SeguradoraController::class, 'mudar'])->name('mudar');
 
 
 

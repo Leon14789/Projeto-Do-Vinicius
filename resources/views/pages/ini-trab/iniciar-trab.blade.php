@@ -86,7 +86,8 @@
 			<script src="../../../assets-sistema/js/breakpoints.min.js"></script>
 			<script src="../../../assets-sistema/js/util.js"></script>
 			<script src="../../../assets-sistema/js/main.js"></script>
-			<script src="../../../assets-sistema/js/desativar-o-scroll.js"></script>
+			<script src="../../../assets-sistema/js/cpf.js"></script>
+			.
 
 	</body>
 </html>

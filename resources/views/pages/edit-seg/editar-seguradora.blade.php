@@ -24,28 +24,33 @@
 					
 						
 								<div class="main">
-									<h1 class="txt">FUNCIONARIOS CADASTRADOS</h1>
+									<h1 class="txt">SEGURADORAS PARA EDIÇÃO</h1>
 									<div class="split style2">
-										
-											<form method="post" action="#" class="form-ini-trab">
-												<div class="fields">
-													<div class="field half">
-                                                        <label for="name">Selecione o Funcionario que deseja editar</label>
 
-														<select name="time">
-															<option value="#">Funcionario 1</option>
-															<option value="#">Funcionario 2</option>
-															<option value="#">Funcionario 3</option>
-															<option value="#">Funcionario 4</option>
-															</select>
 
-													</div>
-													
-												</div>
-												<ul class="actions">
-													<li><a href="" class="button submit">Salvar</a></li>
-												</ul>
-											</form>
+									<table>
+										<thead>
+											<tr>
+												<th>ID</th>
+												<th>Nome</th>
+												<th>Edições</th>
+											</tr>
+										</thead>
+										<tbody>
+											@foreach($insurers as $insurer)
+												<tr>
+													<td>{{$insurer->id}}</td>
+													<td>{{$insurer->name}}</td>
+													<td>
+														<a href="{{ "/edit-seg/{$insurer->id}/edicionar" }}">Edite</a>
+													</td>
+												</tr>
+											@endforeach
+										</tbody>
+									</table>
+
+									
+											
 										
 									</div>
 								</div>
@@ -61,7 +66,7 @@
 			<script src="../../../assets-sistema/js/breakpoints.min.js"></script>
 			<script src="../../../assets-sistema/js/util.js"></script>
 			<script src="../../../assets-sistema/js/main.js"></script>
-			<script src="../../../assets-sistema/js/desativar-o-scroll.js"></script>
+			<script src="../../../assets-sistema/js/cpf.js"></script>
 
 	</body>
 </html>
