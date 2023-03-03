@@ -68,7 +68,7 @@
 				</header>
 				<p>Somos uma empresa prestadora de guincho,na qual trabalhamos com um alto padrão de atendimento aos
 					nossos clientes. somos uma das Prestadora de guincho mais tradicionais da cidade de São Paulo.
-					<br> Atualmente estamos localizados (ENDERECO) mas realizamos atendimento em toda região de SP
+					<br> Atualmente estamos localizados Rua floripes dias pagliato 35 jardim bethania mas realizamos atendimento em toda região de SP
 				</p>
 
 
@@ -113,8 +113,7 @@
 				<header>
 					<h2 class="txt">PARCEIROS</h2>
 				</header>
-				<p>Analizadno a foto anexada ao lado você podera verificar alguma das empresas parceiras que trabalhamos
-					atualmente</p>
+				<p>Analizadno a foto anexada ao lado você podera averiguar alguma das empresas que conosco possuiem parceiria isto é: seguradoras que nós realizamos o atendimento atualmente</p>
 			</div>
 		</section>
 

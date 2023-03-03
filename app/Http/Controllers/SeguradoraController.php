@@ -25,6 +25,8 @@ public function listagem()
     return view('pages/edit-seg/editar-seguradora', compact('insurers'));
 }
 
+// editar seguradora
+
 public function edicionar($id){
     $insurer = insurer::find($id);
     if(!$insurer){
@@ -42,4 +44,21 @@ public function mudar(Request $request,$id){
     $insurer->save();
     return redirect()->to('/funcionario/funcionarios');
 }
+
+
+
+// Deletar Seguradora
+public function deletar(Request $request,$id){
+    $insurer = insurer::find($id);
+    if(!$insurer){
+        abort(404);
+    }
+    $insurer->delete();
+    return redirect()->to('/funcionario/funcionarios');
 }
+
+}
+
+
+
+

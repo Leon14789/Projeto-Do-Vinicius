@@ -42,7 +42,8 @@
 													<td>{{$insurer->id}}</td>
 													<td>{{$insurer->name}}</td>
 													<td>
-														<a href="{{ "/edit-seg/{$insurer->id}/edicionar" }}">Edite</a>
+														<a href="{{ "/edit-seg/{$insurer->id}/edicionar" }}">Edite</a>| 
+														<a href="{{ "/edit-seg/{$insurer->id}/deletar" }}">Delete</a>
 													</td>
 												</tr>
 											@endforeach

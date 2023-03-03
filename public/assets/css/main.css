@@ -1,5 +1,8 @@
 @import url("fontawesome-all.min.css");
-@import url("../webfonts/Good-Times-Regular.woff2");
+@font-face {
+	font-family: Good Times;
+	src: url(../webfonts/Good-Times-Regular.woff2);
+  }
 
 html,
 body,

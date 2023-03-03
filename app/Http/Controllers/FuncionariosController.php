@@ -37,7 +37,7 @@ class FuncionariosController extends Controller
       return view('pages/edit-fun/fun-edit', compact('employee'));
   }
 
-
+// editar Funcionarios
   public function editar(Request $request,$id){
       $employee = employee::find($id);
       if(!$employee){
@@ -49,7 +49,18 @@ class FuncionariosController extends Controller
       $employee->save();
       return redirect()->to('/funcionario/funcionarios');
   }
+// Deletar Funcionario
+  public function excluir(Request $request,$id){
+    $employee = employee::find($id);
+    if(!$employee){
+        abort(404);
+    }
+    $employee->delete();
+    return redirect()->to('/funcionario/funcionarios');
+}
+
   
+
 
 
 

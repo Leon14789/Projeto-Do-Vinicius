@@ -46,7 +46,9 @@
 													<td>{{$employee->cpf}}</td>
 													<td>{{$employee->cell}}</td>
 													<td>
-														<a href="{{ "/edit-fun/{$employee->id}/edicao" }}">Edite</a>
+														<a href="{{ "/edit-fun/{$employee->id}/edicao" }}">Edite</a> | 
+														<a href="{{ "/edit-fun/{$employee->id}/excluir" }}">Delete</a>
+
 													</td>
 												</tr>
 											@endforeach

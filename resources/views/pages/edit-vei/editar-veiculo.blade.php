@@ -46,7 +46,8 @@
 													<td>{{$vehicle->tag}}</td>
 													
 													<td>
-														<a href="{{ "/edit-vei/{$vehicle->id}/edition" }}">Edite</a>
+														<a href="{{ "/edit-vei/{$vehicle->id}/edition" }}">Edite</a> | 
+														<a href="{{ "/edit-vei/{$vehicle->id}/apagar" }}">Deletar</a>
 													</td>
 												</tr>
 											@endforeach

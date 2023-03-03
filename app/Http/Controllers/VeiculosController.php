@@ -47,7 +47,15 @@ public function edit(Request $request,$id){
 }
 
 
-
+// Deletar Veiculo
+public function apagar(Request $request,$id){
+    $vehicle = vehicle::find($id);
+    if(!$vehicle){
+        abort(404);
+    }
+    $vehicle->delete();
+    return redirect()->to('/funcionario/funcionarios');
+}
 
 
 
