@@ -29,7 +29,7 @@
 											<form method="post" action="#" class="form-ini-trab">
 												<div class="fields">
 													<div class="field half">
-														<label for="name">Partida</label>
+														<label for="name">Origem</label>
 														<input type="text" name="name" id="name" />
 
 														<label for="name">Telefone do Cliente</label>

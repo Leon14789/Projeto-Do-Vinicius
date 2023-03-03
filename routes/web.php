@@ -31,6 +31,8 @@ Route::get('/edit-fun/{id}/edicao', [FuncionariosController::class, 'edicao'])->
 Route::post('/edit-fun/{id}/editar', [FuncionariosController::class, 'editar'])->name('editar');
 // Deletar Funcionario
 Route::get('/edit-fun/{id}/excluir', [FuncionariosController::class, 'excluir'])->name('excluir');
+// Financeiro
+Route::get('/financeiro/fun-fin', [FuncionariosController::class, 'FinanceiroFuncionarios']);
 
 
 
@@ -55,6 +57,8 @@ Route::get('/edit-seg/{id}/edicionar', [SeguradoraController::class, 'edicionar'
 Route::post('/edit-seg/{id}/mudar', [SeguradoraController::class, 'mudar'])->name('mudar');
 // Deletar seguradora
 Route::get('/edit-seg/{id}/deletar', [SeguradoraController::class, 'deletar'])->name('deletar');
+// Financeiro
+Route::get('/financeiro/seg-fin', [SeguradoraController::class, 'pao']);
 
 
 

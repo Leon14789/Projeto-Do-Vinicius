@@ -57,7 +57,15 @@ public function deletar(Request $request,$id){
     return redirect()->to('/funcionario/funcionarios');
 }
 
+// Lista todos os funcionarios em editar funcionarios 
+
+public function pao()
+{
+   $insurers = insurer::all();
+    return view('pages/financeiro/seg-fin', compact('insurers'));
 }
+
+ }
 
 
 

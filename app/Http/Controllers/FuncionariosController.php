@@ -29,6 +29,9 @@ class FuncionariosController extends Controller
    }
 
 
+
+
+// editar Funcionarios
    public function edicao($id){
       $employee = employee::find($id);
       if(!$employee){
@@ -37,7 +40,6 @@ class FuncionariosController extends Controller
       return view('pages/edit-fun/fun-edit', compact('employee'));
   }
 
-// editar Funcionarios
   public function editar(Request $request,$id){
       $employee = employee::find($id);
       if(!$employee){
@@ -49,6 +51,8 @@ class FuncionariosController extends Controller
       $employee->save();
       return redirect()->to('/funcionario/funcionarios');
   }
+
+  
 // Deletar Funcionario
   public function excluir(Request $request,$id){
     $employee = employee::find($id);
@@ -61,7 +65,13 @@ class FuncionariosController extends Controller
 
   
 
-
+// Lista todos os funcionarios em editar funcionarios 
+ 
+public function FinanceiroFuncionarios()
+{
+   $employees = employee::all();
+    return view('pages/financeiro/fun-fin', compact('employees'));
+}
 
 
 
